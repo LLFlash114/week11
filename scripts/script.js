@@ -22,3 +22,14 @@
 // }
 
 // greet(name_input);
+
+
+function AreaOfCircle (radius) {
+    let result = MATH.PI * radius * radius
+    return result
+
+}
+
+let radius = prompt("Enter a value ");
+let AreaOfCircle = AreaOfCircle(radius).toFixed(2);
+alert(`The area of a circle with a radius ${radius} is ${AreaOfCircle} `)
