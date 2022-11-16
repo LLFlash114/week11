@@ -24,12 +24,42 @@
 // greet(name_input);
 
 
-function AreaOfCircle (radius) {
-    let result = MATH.PI * radius * radius
-    return result
+// function AreaOfCircle (radius) {
+//     let result = 3.14 * radius * radius
+//     return result
 
+// }
+
+// let r = prompt("Enter a value ");
+// let AreaOfCircle1 = AreaOfCircle(radius).toFixed(2);
+// alert(`The area of a circle with a radius ${radius} is ${AreaOfCircle1} `);
+
+// let radiusParagraph = document.getElementById("#radius");
+// radiusParagraph.textContent += r; 
+
+
+let shoppingItems = ["cheese" , "bread", "green pepper"];
+
+const shoppingItemElement = document.querySelector(".shopping");
+function populateList(arr) {
+    for (item of arr) {
+        let listItem = document.createElement('li');
+        listItem.textContent = item
+        shoppingItemElement.appendChild(listItem);
+    }
 }
 
-let radius = prompt("Enter a value ");
-let AreaOfCircle = AreaOfCircle(radius).toFixed(2);
-alert(`The area of a circle with a radius ${radius} is ${AreaOfCircle} `)
+function changeListStyle (list) {
+    shoppingItemElement.classList.remove("circleList");
+    shoppingItemElement.classList.add("squareList");
+
+}
+populateList(shoppingItems);
+
+
+
+
+
+
+
+
