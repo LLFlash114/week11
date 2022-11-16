@@ -56,6 +56,15 @@ function changeListStyle (list) {
 }
 populateList(shoppingItems);
 
+function makeGreen () {
+    const allListItems = document.querySelectorAll("shopping li")
+    for (let i = 0; i < allListItems.length; i++) {
+        if (allListItems[i].textContent.includes('green')) {
+            
+        }
+    }
+
+}
 
 
 
